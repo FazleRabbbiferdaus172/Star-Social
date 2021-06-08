@@ -10,5 +10,5 @@ urlpatterns = [
         views.UserPosts.as_view(), name='for_user'),
     url(r'by/(?P<username>[-\w]+)/(?P<pk>\d+)/$',
         views.PostDetail.as_view(), name='single'),
-    url(r'delete/(?P<pk>\d+/$)', views.DeletePost.as_view(), name='delete')
+    url(r'delete/(?P<pk>\d+)/$', views.DeletePost.as_view(), name='delete')
 ]

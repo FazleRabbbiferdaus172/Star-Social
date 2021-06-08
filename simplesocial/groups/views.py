@@ -6,6 +6,7 @@ from django.views import generic
 from groups.models import Group, GroupMember
 from django.shortcuts import get_object_or_404
 from django.contrib import messages
+from . import models
 # Create your views here.
 
 

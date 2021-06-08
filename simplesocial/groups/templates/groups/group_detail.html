@@ -17,7 +17,8 @@
             <h2>No post in this group yet!!</h2>
         {% else %}
             {% for post in group.posts.all %}
-                {% include "post/_post.html" %}
+                {% include "posts/_post.html" %}
+            {% endfor %}
         {% endif %}
     </div>
 {% endblock %}
